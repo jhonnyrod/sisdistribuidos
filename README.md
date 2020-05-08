@@ -76,7 +76,7 @@ En primer lugar debe ejecutar el comando
 
 Python3 init.py 8888, Ahora nuestra web estará escuchando peticiones en el puerto 8888, en la dirección:
 
-	http://142.44.246.23:8888/index/.
+	http://142.44.246.23:8888/index/
 
 
 para probar su funcionamiento enviaremos la petición http utilizando POSTMAN, será de tipo POST y en el cuerpo de la se enviará un JSON compuesto por tres etiquetas:
