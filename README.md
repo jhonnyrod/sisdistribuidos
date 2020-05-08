@@ -74,7 +74,8 @@ if __name__ == '__main__':
 # Ejecutando las pruebas ⚙️
 En primer lugar debe ejecutar el comando	
 
-	Python3 init.py 8888, Ahora nuestra web estará escuchando peticiones en el puerto 8888, dirección
+Python3 init.py 8888, Ahora nuestra web estará escuchando peticiones en el puerto 8888, en la dirección:
+
 	http://142.44.246.23:8888/index/.
 
 
