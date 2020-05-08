@@ -38,10 +38,42 @@ Luego Clonar el proyecto
 
 	git clone https://github.com/jhonnyrod/sisdistribuidos
 
+# Codigo ⚙️
+
+!/usr/bin/env python
+import web
+import json
+from collections import Counter
+
+urls = (
+    '/index/', 'index'
+)
+
+class index:
+    def POST(self):
+        # How to obtain the name key and then print the value?
+        web.header('Content-Type', 'application/json')
+        data = web.data()
+        my_json = data.decode('utf8').replace("'", '"')
+        res=json.loads(my_json)
+        print(Counter(res["direccion1"]))
+        if (res["direccion1"].isalnum() and res["direccion2"].isalnum() and (len(res["direccion1"]) == 64) and (len(res["direccion2"]) == 64)):
+            comp=True
+        else:
+            comp=False
+        resp= json.dumps({"direccion1":res["direccion1"], "direccion2": res["direccion2"],"monto":res["monto"], "comprobador":comp})      
+        return resp
+
+if __name__ == '__main__':
+    app = web.application(urls, globals())
+    app.run()
+
+
 # Ejecutando las pruebas ⚙️
 En primer lugar debe ejecutar el comando	
 
-	Python3 init.py 8888, Ahora nuestra web estará escuchando peticiones en el puerto 8888, dirección http://142.44.246.23:8888/index/.
+	Python3 init.py 8888, Ahora nuestra web estará escuchando peticiones en el puerto 8888, dirección
+	http://142.44.246.23:8888/index/.
 
 
 para probar su funcionamiento enviaremos la petición http utilizando POSTMAN, será de tipo POST y en el cuerpo de la se enviará un JSON compuesto por tres etiquetas:
