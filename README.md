@@ -95,7 +95,7 @@ Como respuesta a la petición el método retorna un nuevo JSON con compuesto por
     "direccion1": "Cadena Hash compuesta por 64 caracteres entre letras y numeros",
     "direccion2": "Cadena Hash compuesta por 64 caracteres entre letras y numeros",
     "monto": Valor numerico,
-    "monto": "Verdadero o Falso segun corresponda",	
+    "Comprobador": "Verdadero o Falso segun corresponda",	
     }
 ```
 # Vista previa ⌨️
