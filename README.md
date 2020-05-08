@@ -82,20 +82,22 @@ Python3 init.py 8888, Ahora nuestra web estará escuchando peticiones en el puer
 
 
 para probar su funcionamiento enviaremos la petición http utilizando POSTMAN, será de tipo POST y en el cuerpo de la se enviará un JSON compuesto por tres etiquetas:
+```
     {
     "direccion1": "Cadena Hash compuesta por 64 caracteres entre letras y numeros",
     "direccion2": "Cadena Hash compuesta por 64 caracteres entre letras y numeros",
     "monto": Valor numerico
     }
-
+```
 Como respuesta a la petición el método retorna un nuevo JSON con compuesto por cuatro etiquetas, las tres recibidas anteriormente y una etiqueta más llamada "Comprobador"  la cual corresponde a un valor booleano el cual indica si los valores recibidos en el JSON inicial son correctos o no, es decir verifica que los valores de "direccion1",  "direccion2" y "monto" cumplan con las características especificadas en el JSON. Esta respuesta tiene el siguiente aspecto:
+```
     {
     "direccion1": "Cadena Hash compuesta por 64 caracteres entre letras y numeros",
     "direccion2": "Cadena Hash compuesta por 64 caracteres entre letras y numeros",
     "monto": Valor numerico,
     "monto": "Verdadero o Falso segun corresponda",	
     }
-
+```
 # Vista previa ⌨️
 
 ![alt text](https://github.com/jhonnyrod/sisdistribuidos/blob/master/Ejemplo%20Peticion.png)
