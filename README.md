@@ -39,7 +39,7 @@ Luego Clonar el proyecto
 	git clone https://github.com/jhonnyrod/sisdistribuidos
 
 # Codigo ⚙️
-
+```
 !/usr/bin/env python
 import web
 import json
@@ -67,7 +67,7 @@ class index:
 if __name__ == '__main__':
     app = web.application(urls, globals())
     app.run()
-
+```
 
 # Ejecutando las pruebas ⚙️
 En primer lugar debe ejecutar el comando	
