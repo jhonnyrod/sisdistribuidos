@@ -96,7 +96,8 @@ Como respuesta a la petición el método retorna un nuevo JSON con compuesto por
 
 # Vista previa ⌨️
 
-https://github.com/jhonnyrod/sisdistribuidos/blob/master/Ejemplo%20Peticion.png
+![alt text](https://github.com/jhonnyrod/sisdistribuidos/blob/master/Ejemplo%20Peticion.png)
+
 
 # Construido con 🛠️
 
@@ -111,5 +112,4 @@ https://github.com/jhonnyrod/sisdistribuidos/blob/master/Ejemplo%20Peticion.png
 - Jonathan Rodriguez
 - Jeisson Guauta
 
-# Expresiones de Gratitud 🎁
 
