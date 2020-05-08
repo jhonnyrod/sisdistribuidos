@@ -9,11 +9,11 @@ Blockchain puede almacenar cualquier tipo de informacion en forma de bloques que
 
 # ¿Qué es "Register"?🚀
 
-![alt text](https://github.com/jhonnyrod/sisdistribuidos/blob/master/Modelo%20Register.jpeg)
-
 El objetivo de register es detectar cualquier tipo de manipulacion en la informacion almacenada usando hash, esta funcion toma informacion de cualquier tamaño y a partir de ella se produce otra informacion de tamaño fijo, que generalmente sirve para identificar la entrada.
 
 Podemos definir que Register es como un router, debido a que su funcion es recibir datos de tipo hash y los envia al bloque correspondiente,para este caso tenemos un bloque o componente llamado Coordinador el cual realiza el envio de dos direcciones debidamente codificadas con el algoritmo SHA256,a este proceso se le conoce como transacciones no confirmadas, una vez coordinador realiza el envio de la transacccion no confirmada, register realiza una peticion de tipo POST a un nodo conectado para añadir la transacción al conjunto de transacciones sin confirmar retornando a Coordinador un tipo de dato booleano y de esta manera continue verificando sus reglas internas.
+
+![alt text](https://github.com/jhonnyrod/sisdistribuidos/blob/master/Modelo%20Register.jpeg)
 
 # Pre-requisitos 📋
 
