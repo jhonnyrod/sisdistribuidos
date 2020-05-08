@@ -39,6 +39,8 @@ Luego Clonar el proyecto
 	git clone https://github.com/jhonnyrod/sisdistribuidos
 
 # Codigo ⚙️
+
+Clase init.py
 ```
 !/usr/bin/env python
 import web
